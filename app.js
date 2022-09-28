@@ -18,18 +18,18 @@ navSlide();
 //   playing.play(); 
 // } 
 
-var ppbutton = document.getElementById("vidbutton");
-ppbutton.addEventListener("click", playPause);
+var vidbutton = document.getElementById("vidbutton");
+vidbutton.addEventListener("click", playPause);
 
 myVideo = document.getElementById("myvid");
 function playPause() { 
     if (myVideo.paused) {
         myVideo.play();
-        ppbutton.innerHTML = "Pause";
+        vidbutton.innerHTML = "Pause";
         }
     else  {
         myVideo.pause(); 
-        ppbutton.innerHTML = "Play";
+        vidbutton.innerHTML = "Play";
         }
 }
 
